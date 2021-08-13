@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-12 col-md-12">
+    <app-shopping-edit></app-shopping-edit>
+  </div>
+</div>
+<hr />
+<h3 class="btn btn-default">Items List</h3>
+<div class="container" style="text-transform: capitalize;">
+  <ul class="list-group">
+    <li class="list-group-item" *ngFor="let item of items">
+        {{item.name}}-({{item.amount}})
+    </li>
+  </ul>
+</div>
+
+<hr>
